@@ -2,9 +2,9 @@ import { Effect, Record } from "effect";
 
 /*
  * Summary:
-   * Effect introduces dedicated constructors for creating effects that represent both success and failure
-   * Effect.succeed: Creates an effect that always succeeds with a given value
-   * Effect.fail: Creates an effect that represents an error that can be recovered from
+   * Effect introduces dedicated constructors for creating Effects that represent both success and failure
+   * Effect.succeed: Creates an Effect that always succeeds with a given value
+   * Effect.fail: Creates an Effect that represents an error that can be recovered from
    * These constructors allow you to handle success and failure cases while leveraging the type system to track errors
  * Opinion:
    * This is a much better way of handling errors in a program
