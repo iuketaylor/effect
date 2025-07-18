@@ -9,7 +9,6 @@ import { pipe } from "effect";
 const addOne = (x: number) => x + 1;
 const double = (x: number) => x * 2;
 
-// equivalent to double(addOne(5))
-const result = pipe(5, addOne, double);
+const result = pipe(5, addOne, double); // equivalent to double(addOne(5))
 console.log(result);
 // ^? Output: 12
