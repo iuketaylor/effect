@@ -6,9 +6,6 @@ import { Effect, Record } from "effect";
    * Effect.succeed: Creates an Effect that always succeeds with a given value
    * Effect.fail: Creates an Effect that represents an error that can be recovered from
    * These constructors allow you to handle success and failure cases while leveraging the type system to track errors
- * Opinion:
-   * This is a much better way of handling errors in a program
-   * Not really a fan of the verbosty of Effect.succeed
  */
 
 interface User {

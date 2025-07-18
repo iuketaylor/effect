@@ -5,8 +5,6 @@ import { Data, Effect } from "effect";
    * Promise and tryPromise create Effects that represent asynchronous computations
    * In normal TS - by default Promise<value> only provides the type Value for the resolved value which means errors are not reflected in the type system
    * Effect.promise and Effect.tryPromise allow you to explicitly handle success and failure cases while leveraging the type system to track errors
- * Opinion:
-   * This is very cool, tryPromise would be used basically everywhere for our API calls, DB operations, IO
  */
 
 /*

@@ -5,8 +5,6 @@ import { Data, Effect } from "effect";
    * Effect.Sync and Effect.Try create Effects that represent synchronous computations
    * Effect.Sync wraps code that throws exceptions
    * Effect.Try wraps code that throws exceptions and lets you map those exceptions to custom errors
- * Opinion:
-   * Really useful, especially Effect.try
  */
 
 
