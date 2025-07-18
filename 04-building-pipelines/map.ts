@@ -1,7 +1,7 @@
 import { Effect, pipe } from "effect";
 
 /*
- * Map
+ * Map:
  * Transofrms the value inside an effect by applying a function to it
  */
 

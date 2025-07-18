@@ -1,7 +1,7 @@
 import { Effect, Console, pipe } from "effect";
 
 /*
- * Tap
+ * Tap:
  * Runs a side effect with the result of an effect without changing the original value
  * Useful when you need to record an action but want the original value to be passed to the next step
  * Works similarly to Effect.flatMap but ignores the result of the function passed to it

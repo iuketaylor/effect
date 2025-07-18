@@ -1,7 +1,7 @@
 import { Effect } from "effect";
 
 /*
- * Short Circuiting
+ * Short Circuiting:
  * Effect.gen stops the execution when any Effect fails, just like how await works with rejected Promises
  * As soon as yield* produces a failure, the entire generator stops and returns that failure
  */
@@ -19,6 +19,6 @@ const pipeline = Effect.gen(function*() {
   return saved;
 });
 
-const result = Effect.runSync(pipeline)
-console.log(result)
+const result = Effect.runSync(pipeline);
+console.log(result);
 // ^? {_tag: "Fail", error: "Error validating user: 123"}
