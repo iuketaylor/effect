@@ -2,12 +2,11 @@ import { Console, Effect, Fiber, Schedule } from "effect";
 
 /*
  * runFork:
-   * The foundational function for running effects - returns a "fiber" that can be observed or interupted
-   * Used to run an effect in the background by creating a fiber
-   * Its the base function for all other run functions
-   * "Unless to specifically need a Promise or synchronous operation, Effect.runFork is a good default choice"
+ * The foundational function for running effects - returns a "fiber" that can be observed or interupted
+ * Used to run an effect in the background by creating a fiber
+ * Its the base function for all other run functions
+ * "Unless to specifically need a Promise or synchronous operation, Effect.runFork is a good default choice"
  */
-
 
 /*
  * In this example, the program continuously logs "running..." with each repeition spaced out 200ms apart
@@ -16,15 +15,12 @@ import { Console, Effect, Fiber, Schedule } from "effect";
  */
 const program = Effect.repeat(
   Console.log("running..."),
-  Schedule.spaced("200 millis")
-)
+  Schedule.spaced("200 millis"),
+);
 
-const fiber = Effect.runFork(program)
-      // ^? RuntimeFiber<number, never>
+const fiber = Effect.runFork(program);
+// ^? RuntimeFiber<number, never>
 
 setTimeout(() => {
-  Effect.runFork(Fiber.interrupt(fiber))
-}, 500)
-
-
-
+  Effect.runFork(Fiber.interrupt(fiber));
+}, 500);
