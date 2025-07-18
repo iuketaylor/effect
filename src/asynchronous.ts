@@ -57,4 +57,4 @@ const getTodo2 = (id: number) =>
 			}),
 	});
 const program2 = getTodo2(1);
-    // ^? Effect.Effect<Response, Error, never>
+    // ^? Effect.Effect<Response, NetworkError, never>
