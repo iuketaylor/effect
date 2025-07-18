@@ -1,5 +1,7 @@
 # Building Pipelines
 
+Effect pipelines allow for the composition and sequencing of operations on values.
+
 Effect provides operators like `map`, `flatMap`, and `pipe` to chain Effects together into sequential pipelines.
 
 ## The Point
