@@ -2,7 +2,7 @@ import { pipe } from "effect";
 
 /*
  * Pipe:
- * Utility function that allows us to compose functions a readable, sequential manner
+ * Utility function that allows us to compose functions in a readable, sequential manner
  * Takes the output of one function and passes it as the input to the next function in the pipeline
  */
 
