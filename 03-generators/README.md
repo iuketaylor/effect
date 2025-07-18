@@ -1,7 +1,5 @@
 # Using Generators
 
-Effects are just descriptions of computations, they don't actually run until you tell them to.
-
 Effect provides `Effect.gen` which allows you to write Effects using generator functions for a more imperative, async/await-like syntax.
 
 ## The Point
