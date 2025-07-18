@@ -29,4 +29,5 @@ Effect is a TypeScript library that provides:
 - [Effect Documentation](https://effect.website/)
 - [Effect GitHub](https://github.com/Effect-TS/effect)
 - [Effect Examples](https://github.com/Effect-TS/examples)
+- [Visual Effect](https://effect.kitlangton.com/)
 
