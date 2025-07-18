@@ -16,3 +16,4 @@ const finalAmount = pipe(
 )
 
 Effect.runPromise(finalAmount).then(console.log)
+// ^? Output: 101
