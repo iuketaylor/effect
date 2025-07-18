@@ -1,4 +1,4 @@
-# Effect.js Spike
+# Effect Spike
 
 This repository contains experiments and explorations with [Effect](https://github.com/Effect-TS/effect), a powerful TypeScript library for building robust applications with functional programming principles.
 
